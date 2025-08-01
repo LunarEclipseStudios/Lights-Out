@@ -1,0 +1,33 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:wooden_pickaxe",
+          "components": {
+            "minecraft:custom_data": {
+              "flashlight": true
+            }
+          },
+          "predicates": {
+            "minecraft:damage": {
+              "damage": {
+                "min": 0,
+                "max": 9
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "requirement"
+    ]
+  ],
+  "rewards": {
+    "function": "lunareclipse.darkness:lighting/toggle/items/flashlight"
+  }
+}

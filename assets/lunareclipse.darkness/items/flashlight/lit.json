@@ -1,0 +1,7 @@
+{
+    "model": {
+        "type": "minecraft:model",
+        "model": "lunareclipse.darkness:item/flashlight/lit"
+    },
+    "hand_animation_on_swap": true
+}
