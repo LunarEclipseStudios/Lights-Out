@@ -1,0 +1,9 @@
+{
+	"credit": "Made by Bret06 using Blockbench",
+	"parent": "lunareclipse.darkness:item/mining_helmet/mining_helmet",
+	"textures": {
+		"0": "lunareclipse.darkness:item/mining_helmet/mining_helmet",
+		"1": "lunareclipse.darkness:item/mining_helmet/unlit",
+		"particle": "lunareclipse.darkness:item/mining_helmet/mining_helmet"
+	}
+}

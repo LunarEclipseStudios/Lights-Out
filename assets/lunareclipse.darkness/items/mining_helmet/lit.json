@@ -1,0 +1,7 @@
+{
+    "model": {
+        "type": "minecraft:model",
+        "model": "lunareclipse.darkness:item/mining_helmet/lit"
+    },
+    "hand_animation_on_swap": true
+}

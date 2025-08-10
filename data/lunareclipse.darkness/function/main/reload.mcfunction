@@ -1,7 +1,11 @@
 # Define the needed scoreboard objectives.
 scoreboard objectives add darkness.global_values dummy
+scoreboard objectives add darkness.light_enabled dummy
+scoreboard objectives add darkness.mining_helmet_enabled dummy
 scoreboard objectives add darkness.flashlight_enabled dummy
 scoreboard objectives add darkness.candle_enabled dummy
+scoreboard objectives add darkness.lighter_enabled dummy
+scoreboard objectives add darkness.light_tick dummy
 scoreboard objectives add darkness.flicker dummy
 
 # Schedule our 30 second tick.

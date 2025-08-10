@@ -1,0 +1,11 @@
+[
+  {
+    "condition": "minecraft:weather_check",
+    "raining": true
+  },
+  {
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": { "location": { "can_see_sky": true } }
+  }
+]

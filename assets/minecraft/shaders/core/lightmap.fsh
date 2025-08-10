@@ -14,7 +14,7 @@ uniform float BrightnessFactor;
 float LightSourceMultiplier = 1.25;
 float DaylightMultiplier = 1.45;
 float DarknessMultiplier = 0.8;
-float ColorBrightnessMultiplier = 0.75;
+float ColorBrightnessMultiplier = 0;
 
 in vec2 texCoord;
 out vec4 fragColor;

@@ -1,0 +1,9 @@
+{
+	"credit": "Made by Zwaluw using Blockbench",
+	"parent": "lunareclipse.darkness:item/lighter/lighter",
+	"textures": {
+		"0": "lunareclipse.darkness:item/lighter/small_flame",
+		"1": "lunareclipse.darkness:item/lighter/lighter",
+		"particle": "lunareclipse.darkness:item/lighter/lighter"
+	}
+}

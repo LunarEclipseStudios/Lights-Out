@@ -2,10 +2,6 @@
 # "tag" - The item's tag.
 # "action" - Defines whether the flashlight is gaining or losing durability.
 
-# Make sure the player is actually holding the item.
-$execute if entity @s[type=player] unless items entity @s weapon.* minecraft:wooden_pickaxe[minecraft:custom_data={$(tag):1b}] run return fail
-$execute if entity @s[type=#lunareclipse.darkness:item_frame] unless items entity @s container.0 minecraft:wooden_pickaxe[minecraft:custom_data={$(tag):1b}] run return fail
-
 # Store the item's durability in a scoreboard to update it.
 $execute if entity @s[type=player] run function lunareclipse.darkness:lighting/toggle/update_durability/type/player/store_durability {tag: "$(tag)", action: "$(action)"}
 $execute if entity @s[type=#lunareclipse.darkness:item_frame] run function lunareclipse.darkness:lighting/toggle/update_durability/type/frame/store_durability {tag: "$(tag)", action: "$(action)"}
@@ -20,6 +16,7 @@ execute store result storage lunareclipse.darkness:global_values temp.durability
 # Store the slot in a variable.
 $execute if entity @s[type=player] if items entity @s weapon.offhand minecraft:wooden_pickaxe[minecraft:custom_data={$(tag):1b}] run data modify storage lunareclipse.darkness:global_values temp.durability.slot set value "weapon.offhand"
 $execute if entity @s[type=player] if items entity @s weapon.mainhand minecraft:wooden_pickaxe[minecraft:custom_data={$(tag):1b}] run data modify storage lunareclipse.darkness:global_values temp.durability.slot set value "weapon.mainhand"
+$execute if entity @s[type=player] if items entity @s armor.head minecraft:wooden_pickaxe[minecraft:custom_data={$(tag):1b}] run data modify storage lunareclipse.darkness:global_values temp.durability.slot set value "armor.head"
 $execute if entity @s[type=#lunareclipse.darkness:item_frame] if items entity @s container.0 minecraft:wooden_pickaxe[minecraft:custom_data={$(tag):1b}] run data modify storage lunareclipse.darkness:global_values temp.durability.slot set value "container.0"
 
 # Check if the action is set to add and if it is and the max durability has been met then stop it from progressing further.
